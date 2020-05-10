@@ -1,0 +1,1 @@
+profiler="-agentpath:/Applications/JProfiler.app/Contents/Resources/app/bin/macos/libjprofilerti.jnilib=offline,id=102,config=/Users/sy-hung.doan/.jprofiler11/jprofiler_config.xml"

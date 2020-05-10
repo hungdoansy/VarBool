@@ -1,0 +1,14 @@
+#!/bin/bash
+
+array=( $@ )
+len=${#array[@]}
+main=${array[$len-1]}
+args=${array[@]:0:$len-1}
+
+CMD="rrrun $args -tool=VFT $main"
+
+echo ""
+echo "Command: $CMD"
+echo ""
+
+$CMD
