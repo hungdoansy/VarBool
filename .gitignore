@@ -1,0 +1,13 @@
+auto
+build
+classes
+docs
+
+.vscode
+.idea
+
+.DS_Store
+
+/test/**/log/**
+
+/test/**/**.class

@@ -35,7 +35,7 @@
 # Must be a 1.7 or later VM
 
 ### MacOS
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
 
 ### Ubuntu
 # export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/
