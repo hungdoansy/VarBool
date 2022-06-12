@@ -43,8 +43,14 @@
 # These two lines are for OS X, to set the max memory to just under
 # the total machine memory
 # GIGS=`system_profiler SPHardwareDataType | grep Memory | cut -f2 -d: | cut -f1 -dG | sed -e "s/ //g" `
-export JVM_ARGS="-Xmx1024m -Xms1g"
 
+### Profiling
+# use this if you don't need to do profiling
+# export JVM_ARGS="-Xmx1024m -Xms1g"
+
+# in case you use jProfiler, `id` is the session ID
+profiler="-agentpath:/Applications/JProfiler.app/Contents/Resources/app/bin/macos/libjprofilerti.jnilib=offline,id=105,config=/Users/hung/.jprofiler13/jprofiler_config.xml"
+export JVM_ARGS="-Xmx1024m -Xms1g $profiler"
 
 export PATH=${PATH}:`pwd`/auto/bin:`pwd`/bin
 
