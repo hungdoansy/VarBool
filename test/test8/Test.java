@@ -1,8 +1,8 @@
 package test8;
 
 public class Test extends Thread{
-    static final int size = 2000;
-    static final int smallerSize = Math.min(size, 100);
+    static final int size = 10000;
+    static final int smallerSize = size;
 
     static IntegerWrapper[] numbers = new IntegerWrapper[size];
 
@@ -20,7 +20,7 @@ public class Test extends Thread{
             numbers[i] = new IntegerWrapper(i);
         }
 
-        int nthreads = 4;
+        int nthreads = 5;
         Test[] ts = new Test[nthreads];
 
         for(int i = 0; i < nthreads; i++) {
