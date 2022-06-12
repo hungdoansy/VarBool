@@ -1,7 +1,7 @@
 package test8;
 
 public class Test extends Thread{
-    static final int size = 10000;
+    static final int size = 2000;
     static final int smallerSize = size;
 
     static IntegerWrapper[] numbers = new IntegerWrapper[size];
