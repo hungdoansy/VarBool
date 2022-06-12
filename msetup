@@ -44,13 +44,16 @@
 # the total machine memory
 # GIGS=`system_profiler SPHardwareDataType | grep Memory | cut -f2 -d: | cut -f1 -dG | sed -e "s/ //g" `
 
+### JVM arguments
+# Check this out for -Xmx1024m: https://stackoverflow.com/questions/5374455/what-does-java-option-xmx-stand-for
+
 ### Profiling
 # use this if you don't need to do profiling
 # export JVM_ARGS="-Xmx1024m -Xms1g"
 
 # in case you use jProfiler, `id` is the session ID
 profiler="-agentpath:/Applications/JProfiler.app/Contents/Resources/app/bin/macos/libjprofilerti.jnilib=offline,id=105,config=/Users/hung/.jprofiler13/jprofiler_config.xml"
-export JVM_ARGS="-Xmx1024m -Xms1g $profiler"
+export JVM_ARGS="-Xmx4096m -Xms1g $profiler"
 
 export PATH=${PATH}:`pwd`/auto/bin:`pwd`/bin
 
