@@ -10,4 +10,11 @@ docs
 
 /test/**/log/**
 
+# Java built file
 /test/**/**.class
+
+# jProfile snapshots
+/test/**/*.jps
+/test/**/*.hprof
+
+/temp_log/**/*.hprof.analysis/**
